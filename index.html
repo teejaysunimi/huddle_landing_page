@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="font-6/css/all.css">
+  <title>Frontend Mentor | Huddle landing page with single introductory section</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      align-items: center;
+      background-image:url("/images/bg-desktop.svg");
+      background-color:  hsl(257, 40%, 49%);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    header{
+      padding: 20px 0px 10px 20px;
+    }
+
+    .container{
+      display:flex;
+  }
+
+    .container .img-box{
+      padding: 10px 0px 10px 20px;
+    }
+
+    .container .textbox h1{
+      color: #fff;
+      font-size: 40px;
+      padding: 40px 40px 0px 90px;
+    }
+
+    .container .textbox p{
+      color: #fff;
+    padding-top: 10px;
+    padding-left: 90px;
+    line-height: 22px;
+    }
+
+    .textbox a{
+    display: inline-block;
+    margin-left: 90px;
+     padding:8px 40px ;
+    background: #fff;
+    color:  hsl(257, 40%, 49%) ;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+
+}
+.textbox a:hover{
+    background-color:  hsl(300, 69%, 71%) ;
+    color: #fff ;
+}
+
+footer{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.icon-bar {
+  width: 100%; /* Set a specific width */
+  overflow: auto;
+
+}
+
+.icon-bar a {
+  float: right;
+  width: 5%;
+  text-align: center; /* Center-align text */
+  padding-right: 10px ; /* Add some padding */
+  transition: all 0.3s ease; /* Add transition for hover effects */
+  color: white; /* White text color */
+  font-size: 10px; /* Increased font-size */
+}
+
+.icon-bar a:hover {
+  color: hsl(300, 69%, 71%) ;
+}
+/*.active {
+  background-color:  hsl(300, 69%, 71%) ;;
+}*/
+
+/*style for smaller screens*/
+
+@media  (max-width:720px) {
+
+  body{
+    /*background-image: url(./images/bg-mobile.svg);*/
+    justify-content: center;
+    align-items: center;
+    
+  }
+ 
+  header{
+      padding: 30px 0px 0px 10px ;
+      
+    }
+
+    header img{
+      width: 50%;
+    }
+
+    .container{
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .container .img-box{
+      padding: 100px 0px 10px 150px;
+    }
+
+  .container .img-box img{
+    width: 100%;
+  }
+
+  .container .textbox h1{
+      color: gray;
+      font-size: 60px;
+      padding: 20px 0px 0px 40px;
+    }
+
+    .container .textbox p{
+      color: #fff;
+    padding-top: 10px;
+    padding-left: 30px;
+    line-height: 30px;
+    width: 200%;
+    font-size: 25px;
+    }
+
+    .textbox a{
+    display: inline-block;
+    margin-left: 15em;
+    margin-top: 30px;
+     padding:8px 40px ;
+    background: #fff;
+    color:  hsl(257, 40%, 49%) ;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+
+}
+.textbox a:hover{
+    background-color:  hsl(300, 69%, 71%) ;
+    color: #fff ;
+}
+
+footer{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.icon-bar {
+  width: 100%; /* Set a specific width */
+  overflow: auto;
+
+}
+
+.icon-bar a {
+  float: left;
+  width: 9%;
+  text-align: center; /* Center-align text */
+  padding-top: 60px;
+  padding-left: 100px ; /* Add some padding */
+  transition: all 0.3s ease; /* Add transition for hover effects */
+  color: white; /* White text color */
+  font-size: 10px; /* Increased font-size */
+}
+
+.icon-bar a:hover {
+  color: hsl(300, 69%, 71%) ;
+}
+
+  
+}
+
+
+
+
+  </style>
+</head>
+<body>
+
+  <header><img src="./images/logo.svg" alt=""></header>
+
+  <div class="container">
+    <div class="img-box">
+      <img src="./images/illustration-mockups.svg" alt="">
+    </div>
+
+    <div class="textbox">
+    <h1> Build The Community <br> Your Fans Will Love</h1>
+
+    <p>Huddle re-imagines the way we build communities. You have <br> a voice, but so does your audience. 
+      Create connections with <br> your users as you engage in genuine discussion. 
+    </p>
+
+<a class="active" href="">Register</a>
+    </div>
+  </div>
+
+  <footer>
+
+    <div class="icon-bar">
+      <a href=""> <i class="fab fa-instagram fa-2x"></i></a>
+      <a href=""> <i class="fab fa-twitter fa-2x"></i></a>  
+      <a href=""> <i class="fab fa-facebook fa-2x"></i></a>  
+    
+    
+    </div>
+    
+  </footer>
+</body>
+</html>
